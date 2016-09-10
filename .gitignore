@@ -2,6 +2,12 @@
 *.swp
 *.m~
 
+#bundler runtime files
+*.key.gz
+*.txt
+*.ply
+bundle_*
+
 #OS files
 *.DS_Store
 *.DS_Store?
