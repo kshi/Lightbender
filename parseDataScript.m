@@ -1,5 +1,6 @@
+function[cameras, positions, colors, cloudpts] = parseDataScript(filename)
 %fclose('bundle.out');
-fid = fopen('bundle.out');
+fid = fopen(filename);
 fgetl(fid); % skip first line - header
 line1 = fgetl(fid);
 infoArray = strsplit(line1,' ');
@@ -54,5 +55,6 @@ for index = 0:(num_points-1)
 end
 
 fclose('all');
+end
     
 
