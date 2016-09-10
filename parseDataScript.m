@@ -44,8 +44,8 @@ for index = 0:(num_points-1)
     for i = 0:(nc-1)
         cam_i = eval(arrv{i*4+1+1})+1; % +1 b/c camera index in .out starts at 0
         cloudpts(cam_i,index*3+1) = 1; % sets column 1 to true
-        cloudpts(cam_i,index*3+2) = eval(arrv{i*4+3}); % sets x column
-        cloudpts(cam_i,index*3+3) = eval(arrv{i*4+4}); % sets y column
+        cloudpts(cam_i,index*3+2) = eval(arrv{i*4+3+1}); % sets x column
+        cloudpts(cam_i,index*3+3) = eval(arrv{i*4+4+1}); % sets y column
     end
 end
 
