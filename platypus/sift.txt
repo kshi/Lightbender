@@ -1,6 +1,0 @@
-mogrify -format pgm ./IMG_6192.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6192.pgm > ./IMG_6192.key; rm ./IMG_6192.pgm; gzip -f ./IMG_6192.key
-mogrify -format pgm ./IMG_6193.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6193.pgm > ./IMG_6193.key; rm ./IMG_6193.pgm; gzip -f ./IMG_6193.key
-mogrify -format pgm ./IMG_6195.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6195.pgm > ./IMG_6195.key; rm ./IMG_6195.pgm; gzip -f ./IMG_6195.key
-mogrify -format pgm ./IMG_6196.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6196.pgm > ./IMG_6196.key; rm ./IMG_6196.pgm; gzip -f ./IMG_6196.key
-mogrify -format pgm ./IMG_6198.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6198.pgm > ./IMG_6198.key; rm ./IMG_6198.pgm; gzip -f ./IMG_6198.key
-mogrify -format pgm ./IMG_6199.jpg; /home/kshi/Applications/bundler-v0.3-binary/bin/sift < ./IMG_6199.pgm > ./IMG_6199.key; rm ./IMG_6199.pgm; gzip -f ./IMG_6199.key
