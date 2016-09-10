@@ -25,6 +25,8 @@ end
 
 % rows: x,y,z columns: point index
 positions = zeros(3,num_points); 
+% rows: r,g,b columns: point index
+colors = zeros(3,num_points);
 % rows: camera index columns: point information (exists-0/1 x y)
 cloudpts = zeros(num_cameras,num_points*3); % info whether point exists in certain views/cameras
 
@@ -36,8 +38,10 @@ for index = 0:(num_points-1)
     end
     
     %color (skip)
-    fgetl(fid);
-    
+    arrc = strsplit(fgetl(fid),' ');
+    for row = 1:3
+        colors(row,index+1) = eval(arrc{row});
+    end
     %view list
     arrv = strsplit(fgetl(fid),' ');
     nc = eval(arrv{1});
